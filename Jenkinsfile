@@ -1,8 +1,8 @@
 pipeline {
     agent any
      tools {
-            maven 'Maven 3.3.9'
-            jdk 'jdk8'
+            maven 'Maven 3.6.3'
+            jdk 'jdk9'
         }
 
     triggers {
@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Test') {
            steps {
-                 sh 'mvn -Dmaven.test.failure.ignore=true install'
+                 sh 'mvn -Dmaven.test.failure.ignomvre=true install'
             }
         }
     }
