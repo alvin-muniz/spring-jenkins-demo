@@ -1,17 +1,21 @@
 pipeline {
     agent any
+    tools {
+            maven 'apache-maven-3.6.3'
+        }
+
     triggers {
         pollSCM '* * * * *'
     }
     stages {
-        stage('Build') {
-            steps {
-                sh './gradlew assemble'
-            }
-        }
         stage('Test') {
             steps {
-                sh './gradlew test'
+                sh 'mvn clean test'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'mvn install -DskipTests'
             }
         }
     }
