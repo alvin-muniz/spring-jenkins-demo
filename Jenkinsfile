@@ -1,20 +1,17 @@
 pipeline {
     agent any
-    tools {
-            maven 'apache-maven-3.6.3'
-        }
 
     triggers {
         pollSCM '* * * * *'
     }
     stages {
         stage('Test') {
-            steps {
+            withMaven {
                 sh 'mvn clean test'
             }
         }
         stage('Build') {
-            steps {
+            withMaven {
                 sh 'mvn install -DskipTests'
             }
         }
