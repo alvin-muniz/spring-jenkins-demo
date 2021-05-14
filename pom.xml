@@ -174,7 +174,8 @@
                         <version>2.2.0</version>
                         <configuration>
                             <to>
-                                <image>silentreality/demo-cicd</image>
+                                <image>registry.hub.docker
+                                    .com/silentreality/demo-cicd</image>
                                 <tags>
                                     <tag>${project.version}</tag>
                                     <tag>latest</tag>
