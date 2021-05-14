@@ -4,4 +4,4 @@ before_install:
 
 script:
   - mvn clean install
-  - mvn heroku:deploy jib:build -P deploy-heroku,deploy-docker --stacktrace
+  - mvn heroku:deploy jib:build -P deploy-heroku,deploy-docker
