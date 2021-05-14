@@ -10,4 +10,9 @@ class SpringJenkinsDemoApplicationTests {
     void contextLoads() {
     }
 
+    @Test
+    void smokeTest() {
+        assert "Hello".equals("Yes");
+    }
+
 }
