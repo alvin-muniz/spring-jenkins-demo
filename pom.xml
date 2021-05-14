@@ -119,6 +119,13 @@
             <version>0.9.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.heroku.sdk</groupId>
+            <artifactId>heroku-maven-plugin</artifactId>
+            <version>3.0.4</version>
+        </dependency>
+
+
 
 
     </dependencies>
@@ -132,7 +139,7 @@
             <plugin>
                 <groupId>com.heroku.sdk</groupId>
                 <artifactId>heroku-maven-plugin</artifactId>
-                <version>3.0.2</version>
+                <version>3.0.4</version>
             </plugin>
         </plugins>
     </build>
@@ -148,7 +155,7 @@
                     <plugin>
                         <groupId>com.heroku.sdk</groupId>
                         <artifactId>heroku-maven-plugin</artifactId>
-                        <version>3.0.2</version>
+                        <version>3.0.4</version>
                         <configuration>
                             <appName>spring-cicd-example</appName>
                             <processTypes>
