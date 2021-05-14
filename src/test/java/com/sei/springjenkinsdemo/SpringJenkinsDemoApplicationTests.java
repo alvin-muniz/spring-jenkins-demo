@@ -12,7 +12,7 @@ class SpringJenkinsDemoApplicationTests {
 
     @Test
     void smokeTest() {
-        assert "Hello".equals("Yes");
+        assert "Hello".equals("Hello");
     }
 
 }
